@@ -1,0 +1,15 @@
+﻿{
+  "name": "com.billiotgames.scenecontroller",
+  "version": "1.0.0",
+  "displayName": "Scene Controller",
+  "description": "Scene을 로드 & 이동을 관리하는 패키지 입니다",
+  "unity": "6000.2",
+  "author": {
+    "name": "Billiot Games",
+    "url": "https://github.com/Sanghun2/Scene-Controller"
+  },
+  "keywords": [
+    "Manager",
+    "Controller"
+  ]
+}
