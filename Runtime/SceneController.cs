@@ -5,6 +5,9 @@ namespace BilliotGames
 {
     public class SceneController : Singleton<SceneController>
     {
+        public string CurrentSceneID => currentSceneID;
+
+        private string currentSceneID;
         private ISceneTransitor sceneTransitorBase;
 
         public void SetSceneTransitor(ISceneTransitor transitor) {
@@ -13,7 +16,10 @@ namespace BilliotGames
 
         public void TransitionScene(string sceneID, SceneTransitionContextBase contextBase=null, Action callback=null) {
             if (sceneTransitorBase != null) {
-                sceneTransitorBase.TransitionScene(sceneID, contextBase, callback);
+                sceneTransitorBase.TransitionScene(sceneID, contextBase, onTransitionSucess:() => {
+                    currentSceneID = sceneID;
+                    callback?.Invoke();
+                });
             }
         }
     }

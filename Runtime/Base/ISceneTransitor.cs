@@ -5,7 +5,7 @@ namespace BilliotGames
 {
     public interface ISceneTransitor
     {
-        public abstract void TransitionScene(string sceneID, SceneTransitionContextBase contextBase, Action callback = null);
+        public abstract void TransitionScene(string sceneID, SceneTransitionContextBase contextBase, Action onTransitionSucess = null);
     }
 
     public class SceneTransitionContextBase {

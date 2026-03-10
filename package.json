@@ -1,6 +1,6 @@
 ﻿{
   "name": "com.billiotgames.scenecontroller",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "Scene Controller",
   "description": "Scene을 로드 & 이동을 관리하는 패키지 입니다",
   "unity": "6000.2",
