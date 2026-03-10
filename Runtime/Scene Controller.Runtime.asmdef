@@ -1,3 +1,16 @@
 {
-	"name": "SceneController.Runtime"
+    "name": "SceneController.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:755f0284ed4e75e478098791d87d493d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
