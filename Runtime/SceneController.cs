@@ -32,6 +32,9 @@ namespace BilliotGames
                     callback?.Invoke();
                 });
             }
+            else {
+                Debug.LogError($"<color=red>transitor is null</color>");
+            }
         }
     }
 }
